@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork13.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/dice.js" defer></script>
+    <link href="css/dice.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="mx-auto mt-1 p-4 rounded-5 shadow main_wrap">
+
+    <h1 class="text-center">Игра в кости</h1>
+    <h3>Правила</h3>
+    <p id="rules">Первым бросает кости компьютер. Затем ваш ход.
+        Вы можете перебросить одну или несколько костей (или одну несколько раз),
+        на это есть три попытки. Если на ваших костях выпадет комбинация 1-2-3 (в любом порядке),
+        вы автоматически проигрываете. Если выпадает комбинация 4-5-6 - автоматически выигрываете.</p>
+    <h3 class="text-center">Удачи!</h3>
+    <div class="w-50 mx-auto">
+        <button class="w-100 button_active" id="start">Начать игру</button>
+    </div>
+
+    <div class="mx-auto row my-3">
+        <div class="col-6">
+            <button class="w-100 button_inactive" id="make_move">Бросить кости</button>
+        </div>
+        <div class="col-6">
+            <button class="w-100 button_inactive" id="end_move">Конец хода</button>
+        </div>
+    </div>
+
+
+    <div class="mx-auto row">
+        <div id="gamer" class="col-6">
+            <div class="rounded bg-warning py-1 mb-2 text-dark text-center">Ваши кости</div>
+            <div>
+                <div class="dice_div">
+                    <img id="dice1" src="img/dice1.png" alt="Кубик 1">
+                    <button class="mt-2 button_inactive" id="change1">Перебросить</button>
+                </div><div class="dice_div">
+                    <img id="dice2" src="img/dice1.png" alt="Кубик 2">
+                    <button class="mt-2 button_inactive" id="change2">Перебросить</button>
+            </div><div class="dice_div">
+                    <img id="dice3" src="img/dice1.png" alt="Кубик 3">
+                    <button class="mt-2 button_inactive" id="change3">Перебросить</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="computer" class="col-6">
+            <div class="rounded bg-warning py-1 mb-2 text-dark text-center">Кости компьютера</div>
+            <div>
+                <div class="dice_div"><img id="comp_dice1" src="img/dice1.png" alt="Кубик 1"></div><div class="dice_div">
+                <img id="comp_dice2" src="img/dice1.png" alt="Кубик 2"></div><div class="dice_div">
+                <img id="comp_dice3" src="img/dice1.png" alt="Кубик 3"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="mx-auto row my-3 text-center">
+        <div class="col-6"><h1 id="result"></h1></div>
+        <div class="col-6"><h1 id="comp_result"></h1></div>
+    </div>
+
+    <div class="w-100 mx-auto text-center">
+        <h1 id="move_result"></h1>
+    </div>
+
+</div>
+
+
+<footer>
+    <a href="index.html"><button class="button_active">На главную</button></a>
+</footer>
+
+
+
+</body>
+</html>

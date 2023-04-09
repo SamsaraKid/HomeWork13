@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button{
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin: 5% auto;
+    cursor: pointer;
+}

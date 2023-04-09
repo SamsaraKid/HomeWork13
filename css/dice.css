@@ -1,0 +1,118 @@
+body{
+  color: #d5d500;
+  box-sizing: border-box;
+  background-color: #6e946e;
+}
+
+.main_wrap{
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 75%;
+}
+
+button{
+  padding: 15px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #d5d500;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button_active{
+  background-color: #5959ff;
+}
+
+.button_inactive{
+  background-color: #4f4f4f;
+  color: #c8c8c8;
+}
+
+.button_active:hover {
+  background-color: rgb(0, 73, 218);
+}
+
+/*.button_inactive:hover {*/
+/*  background-color: rgb(0, 73, 218);*/
+/*}*/
+
+.button_active:active {
+  background-color: rgb(0, 45, 134);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#gamer img, #computer img{
+  width: 100px;
+  height: 100px;
+}
+
+#rules{
+  text-align: justify;
+}
+
+.dice_div{
+  display: inline-flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+}
+
+h1{
+  height: 48px;
+}
+
+@media (max-width: 1080px){
+  .main_wrap{
+    width: 100%;
+  }
+  button{
+    padding: 35px 15px;
+  }
+  body{
+    font-size: x-large;
+  }
+  #change1, #change2, #change3{
+    font-size: medium;
+  }
+  .main_wrap {
+    background-image: none;
+    box-shadow: none !important;
+  }
+  body{
+    background-image: url("../img/back90.jpg");
+    background-size: cover;
+  }
+}
+
+footer{
+  width: max-content;
+  margin: 5% auto;
+}
+
+footer button{
+  padding: 15px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #d5d500;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+footer .button_active{
+  background-color: #5959ff;
+}
+
+footer .button_inactive{
+  background-color: #4f4f4f;
+  color: #c8c8c8;
+}
+
+footer .button_active:hover {
+  background-color: rgb(0, 73, 218);
+}
